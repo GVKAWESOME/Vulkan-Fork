@@ -17,6 +17,8 @@ class Downloader:
                      'playlistend': config.MAX_PLAYLIST_LENGTH,
                      'quiet': True,
                      'ignore_no_formats_error': True
+                     'extractor_args': {'youtube': {'player_client': ['mweb']}},
+        'js_runtimes': ['node', 'deno']
                      }
     __YDL_OPTIONS_EXTRACT = {'format': 'bestaudio/best',
                              'default_search': 'auto',
@@ -25,6 +27,8 @@ class Downloader:
                              'playlistend': config.MAX_PLAYLIST_LENGTH,
                              'quiet': True,
                              'ignore_no_formats_error': True
+                             'extractor_args': {'youtube': {'player_client': ['mweb']}},
+        'js_runtimes': ['node', 'deno']
                              }
     __YDL_OPTIONS_FORCE_EXTRACT = {'format': 'bestaudio/best',
                                    'default_search': 'auto',
@@ -33,6 +37,8 @@ class Downloader:
                                    'playlistend': config.MAX_PLAYLIST_LENGTH,
                                    'quiet': True,
                                    'ignore_no_formats_error': True
+                                   'extractor_args': {'youtube': {'player_client': ['mweb']}},
+        'js_runtimes': ['node', 'deno']
                                    }
     __BASE_URL = 'https://www.youtube.com/watch?v={}'
 
